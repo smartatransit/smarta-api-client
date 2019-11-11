@@ -2,6 +2,7 @@
 
 require 'rest-client'
 require 'json'
+require 'marta_api/utils'
 
 module MartaApi
   module Rest
