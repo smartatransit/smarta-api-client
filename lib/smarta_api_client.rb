@@ -1,6 +1,4 @@
-require "smarta_api_client/version"
+# frozen_string_literal: true
 
-module SmartaApiClient
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require 'smarta_api_client/version'
+require 'marta_api/client'
