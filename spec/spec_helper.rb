@@ -2,6 +2,14 @@
 
 require 'bundler/setup'
 require 'smarta_api_client'
+require 'simplecov'
+SimpleCov.start
+
+
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
